@@ -13,13 +13,15 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { AuthService } from '../services/auth.service';
 import { LoginPage } from '../pages/login/login';
+import { SignupPage } from '../pages/signup/signup';
 import { NgxErrorsModule } from '@ultimate/ngxerrors';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    LoginPage
+    LoginPage,
+    SignupPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -32,7 +34,8 @@ import { NgxErrorsModule } from '@ultimate/ngxerrors';
   entryComponents: [
     MyApp,
     HomePage,
-    LoginPage
+    LoginPage,
+    SignupPage
   ],
   providers: [
     AuthService,

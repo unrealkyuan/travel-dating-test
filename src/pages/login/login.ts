@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 import { HomePage } from '../home/home';
+import { SignupPage } from '../signup/signup';
+
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { AuthService } from '../../services/auth.service';
@@ -51,5 +53,8 @@ import { AuthService } from '../../services/auth.service';
 				error => this.loginError = error.message
 			);
 	}
+  signup(){
+    this.navCtrl.push(SignupPage);
+  }
 
  }
